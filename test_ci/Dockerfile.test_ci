@@ -1,0 +1,22 @@
+# Utilisation d'une image Alpine légère comme image de base
+FROM alpine:3.16.8 
+
+# Répertoire de travail /app/tests
+WORKDIR /test_ci
+
+# Copie de tous les fichiers de test dans le répertoire /app/tests du conteneur
+COPY . .
+
+# Installation de Python3 et pip
+RUN apk add --update --no-cache python3 py3-pip \
+    && ln -sf python3 /usr/bin/python \
+    && pip3 install --no-cache-dir --upgrade pip setuptools
+
+# installation des librairies à partir du fichier requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Rendre le script exécutable
+RUN chmod +x /test_ci/run_tests.sh
+
+# Commande pour exécuter les tests
+CMD ["./run_tests.sh"]  

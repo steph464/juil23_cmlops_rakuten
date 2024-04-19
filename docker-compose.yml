@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  api_server:
+    build:
+      context: ./app_V4
+      dockerfile: Dockerfile.app
+    ports:
+      - "8005:8000"
+    networks:
+      - network_rakuten
+    volumes:
+      - ./app_V4:/app
+      - ./BDD:/BDD
+      - ./models:/models
+
+  test_ci:
+    build:
+      context: ./test_ci
+      dockerfile: Dockerfile.test_ci
+    ports:
+      - "8006:8000"
+    networks:
+      - network_rakuten
+    command: sleep 30 
+    volumes:
+      - ./test_ci:/test_ci
+      - ./app_V4:/app                      
+      - ./models:/models                   
+    depends_on:
+      - api_server
+
+# Ajout de networks
+networks:
+  network_rakuten:
+
