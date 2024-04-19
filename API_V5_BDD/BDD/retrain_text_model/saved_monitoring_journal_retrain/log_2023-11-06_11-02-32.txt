@@ -1,0 +1,31 @@
+
+====================================================================
+    Predictions test using CONV1D BASED MODEL - results
+====================================================================
+
+request done at "predict_text_class"
+| username = 'admin'
+| password = 'boss'
+| designation = '30 Spots Encastrable Orientable Blanc Avec Gu10 Led De 5w Eqv. 40w Blanc Froid 6000k'
+| description = '<b>Lot de 30 Spots encastrable orientable BLANC avec GU10 LED de 5W &#61; 40W</b> <p><b>Kit contenant: x30 Douilles GU10 &#43; x30 Ampoules GU10 5W &#43; x30 Colerettes Blanche</b></p> <p></p> <p><b>L&#39;Ampoules LED 5W GU10 </b>fait partie d une vaste gamme de lampes d ambiance à LED de longue durée faible consommation et brillamment conçues avec un <b>culot GU10</b> sans avoir à changer votre installation.</p> <p>Avec une remarquable combinaison de technologie haute efficacité et une forme innovante <b>L&#39;Ampoules LED GU10 5W </b>fournit la qualité de lumière que vous attendez.</p> <p>Elle dure jusqu à 25 fois plus longtemps et fournit jusqu à 82 % d économies d énergie.</p> <p>De plus d êtres design <b>l&#39;Ampoules LED GU10 5W </b>à une efficacité de rayonnement pouvant s&#39;étendre jusqu&#39;a 150°. <b>L&#39;Ampoules LED GU10 5W</b> sont les mêmes ou meilleures que les <b>Ampoules E27</b> standards mais elles consomment moins d&#39;énergie.</p> <p>Solution économique et écologique de nouvelle génération utilisation dans les maisons bureaux restaurants hôtels et bâtiments publics.Elle remplace entièrement la lampe incandescence ou halogène standard. </p> <p>Installation facile longue durée de vie.</p> <p></p> <p><b>Avantage:</b></p> <p>- Durée de vie : 25.000 heures<br />- Consomme jusqu à 85 % moins d énergie<br />- Ampoule LED omnidirectionnelle homogène et équilibrée<br />- Allumage instantané</p> <p>L&#39;efficacité énergétique et une longue durée de vie des <b>Ampoules LED GU10</b> engendrent moins de remplacements de lampe en comparaison avec les sources incandescentes et halogènes standards.</p> <p></p> <p></p> <b>Douille en céramique GU10 avec câble gainé 230 Volts - Classe 2</b> <p>Connecteur électrique automatique (pas de vis) avec double connexion pour un montage en parallèle (arrivée pour le spot et départ pour le spot suivant) &#34;Sucre&#34; de protection clipsable Dimensions (longueur x diamètre) &#61; 175 x 30 mm. </p> <p>Conforme aux Normes CE - RoHS - EMC <br /><br />Douille pour ampoule à culot GU10/GZ10 automatique<br />Corps isolant en steatite<br />Fil silicone 075mm²<br />Câble gainé<br />Sucre de protection avec fermeture à clipser ( pas besoin de vis ) amovible.<br />Double connexion pour montage en série clipsable sans besoin de s&#39;aider d&#39;un outil.<br />Longueur 15cm <br />Résistant à 250°C</p> <p></p> <p></p> <b>Collerette Orientable Ronde Blanche </b> <p>Dimensions : diamètre 65mm Perçage d&#39;encastrement : pour 90mm de diamètre total </p> <p>Ce support encastrable blanc est idéale grâce à son centre orientable. Cela permet de diffuser la lumière dans une direction choisie. Son diamètre de 90 mm et le trou de coupe de 65 mm. L&#39;ampoule se place par l&#39;avant très pratique lorsque l&#39;on veut la changer. </p> <p>Sa couleur blanche permet de l&#39;intégrer sans problème à votre plafond blanc ou coloré.</p> <p></p>  <p>Puissance</p>  <p>5W</p>  <p>Douille</p>  <p>GU10</p>  <p>Alimentation</p>  <p>AC175-265V</p>  <p>Flux lumineux</p>  <p>400 Lm</p>  <p>Puissance des LEDs</p>  <p>5W</p>  <p>Fréquence de fonctionnement</p>  <p>50-60Hz</p>  <p>Couleur de la lumière</p>  <p>4500K</p>  <p>Angle de la lumière</p>  <p>110°</p>  <p>Ra</p>  <p>&gt;80</p>  <p>Consommation</p>  <p>5KWh/1000h</p>  <p>Température de fonctionnement</p>  <p>-30°C / &#43;50°C</p>  <p>Matériel</p>  <p>Thermoplastic &#43; Aluminium</p>  <p>Degré de protection</p>  <p>IP20</p>  <p>Taille</p>  <p>?50x57 mm</p>  <p>Poids</p>  <p>0.077 kg</p>  <p>Exploitation</p>  <p>&gt; 25 000 Heures</p>'
+
+expected result code = 200
+expected Predicted class code =  2060
+
+actual result code = 200
+actual Predicted class code = 2582  
+==> Code result = SUCCESS
+==> Prediction result = FAILURE
+
+====================================================================
+    f1_weighted score monitoring - results
+====================================================================
+
+request done at "predict_text_class"
+| username = 'admin'
+| password = 'boss'
+
+f1_weighted score =0.803624826296123
+f1_target = 0.6
+f1_error (must be < 0.15)= 0.203624826296123
+==> model is valid =False

@@ -1,0 +1,30 @@
+
+====================================================================
+    Predictions test using Xception IMAGE BASED MODEL - results
+====================================================================
+
+request done at "predict_image_class"
+| username = 'admin'
+| password = 'boss'
+| Image path = '/home/workspace/API/API_rakuten/img_maintenance/test/image_916824168_product_160284580.jpg'
+
+expected result code = 200
+expected Predicted class code =  40
+
+actual result code = 200
+actual Predicted class code = 40  
+==> Code result = SUCCESS
+==> Prediction result = SUCCESS
+
+====================================================================
+    f1_weighted score monitoring - results
+====================================================================
+
+request done at "predict_text_class"
+| username = 'admin'
+| password = 'boss'
+
+f1_weighted score =0.659743844230113
+f1_target = 0.65
+f1_error (must be < 0.15)= 0.009743844230112986
+==> model is valid =True
