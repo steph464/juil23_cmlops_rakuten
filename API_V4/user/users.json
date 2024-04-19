@@ -1,0 +1,15 @@
+{
+    "admin": {
+        "username": "admin",
+        "password": "boss",
+        "hashed_password": "$2b$12$wrBDj98rTON/ae3vZ1Y0u.X9lg6h1liiMUT1v/cHRKy/3Ij2G2BFK"
+    },
+    "alice": {
+        "username": "alice",
+        "hashed_password": "$2b$12$QAls4q9WeWmLNIFVPsPc9udKofNSmO6jze4Q8zwkFPW/kpjy8.xSa"
+    },
+    "david": {
+        "username": "david",
+        "hashed_password": "$2b$12$Y8RuaRA5TBk8ObjFAqo5PePCJk1eE/GWqPP/wFUsE9uyp2YERAChu"
+    }
+}
